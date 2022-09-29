@@ -1,0 +1,49 @@
+golang-github-hashicorp-mdns (1.0.3-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository, Repository-Browse.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Fri, 05 Feb 2021 01:10:50 +0000
+
+golang-github-hashicorp-mdns (1.0.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Standards-Version: 4.5.0.
+  * Rules-Requires-Root: no
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Sat, 29 Feb 2020 00:49:50 +1100
+
+golang-github-hashicorp-mdns (1.0.1-1) unstable; urgency=medium
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Dmitry Smirnov ]
+  * New upstream release.
+  * golang-go --> golang-any.
+  * DH & compat to version 12.
+  * Testsuite: autopkgtest-pkg-go.
+  * Priority: optional; Standards-Version: 4.4.1.
+  * Removed transitional package "golang-dns-dev" from (Build-)Depends.
+  * Added myself to Uploaders.
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Thu, 28 Nov 2019 12:30:35 +1100
+
+golang-github-hashicorp-mdns (0.0~git20150317.0.2b439d3-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Paul Tagliamonte ]
+  * Use a secure transport for the Vcs-Git and Vcs-Browser URL
+
+  [ Tim Potter]
+  * Don't run unit tests that require network access to succeed
+  * Standards-Version: 3.9.8
+
+ -- Tim Potter <tpot@hpe.com>  Thu, 06 Oct 2016 12:31:11 +1100
+
+golang-github-hashicorp-mdns (0.0~git20150317.0.2b439d3-1) unstable; urgency=medium
+
+  * Initial release
+
+ -- Tianon Gravi <tianon@debian.org>  Wed, 21 Oct 2015 14:17:33 -0700

@@ -1,0 +1,35 @@
+Source: golang-github-hashicorp-mdns
+Section: devel
+Priority: optional
+Standards-Version: 4.5.0
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Tianon Gravi <tianon@debian.org>, Tim Potter <tpot@hpe.com>,
+           Dmitry Smirnov <onlyjob@debian.org>,
+Build-Depends: debhelper-compat (= 12),
+               dh-golang,
+               golang-any,
+               golang-github-miekg-dns-dev,
+               golang-golang-x-net-dev
+Homepage: https://github.com/hashicorp/mdns
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-hashicorp-mdns
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-hashicorp-mdns.git
+XS-Go-Import-Path: github.com/hashicorp/mdns
+Testsuite: autopkgtest-pkg-go
+Rules-Requires-Root: no
+
+Package: golang-github-hashicorp-mdns-dev
+Architecture: all
+Depends: golang-github-miekg-dns-dev,
+         golang-golang-x-net-dev,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: simple mDNS client/server library in Golang
+ Simple mDNS client/server library in Golang. mDNS or Multicast DNS can be used
+ to discover services on the local network without the use of an authoritative
+ DNS server. This enables peer-to-peer discovery. It is important to note that
+ many networks restrict the use of multicasting, which prevents mDNS from
+ functioning. Notably, multicast cannot be used in any sort of cloud, or shared
+ infrastructure environment. However it works well in most office, home, or
+ private infrastructure environments.
+ .
+ This package contains the source.
